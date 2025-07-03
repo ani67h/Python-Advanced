@@ -1,12 +1,11 @@
-denary = int(input("Enter a number to convert it into Binary number : "))
-one = "1"
-zero = "0"
+denary = int(input("Enter a denary number to know it's binary value : "))
+store = ""
 
-for denary in range(zero, one):
-   if denary > 1:
-       if (denary % 2) == 0:
-            print(zero)
-        else:
-           print(one)      
-    else:
-       print(one)
+while(denary>0):
+    binary_value = denary % 2
+    store = str(binary_value) + store
+    denary = denary//2
+
+print("The binary value is ",store) 
+
+# A bit of this code is taken from youtube videos
