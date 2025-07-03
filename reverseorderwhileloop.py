@@ -1,10 +1,10 @@
 num  = int(input("Enter a number : "))
 
-digit = 0
-
+count = 0
 digit = num 
-while digit > 0:
-    digit1 = digit % 10
-    digit += digit1 
 
-print("There are ",digit, "in the number")    
+while digit > 0:
+    digit = digit // 10
+    count += 1
+
+print("There are ",count, "in the number")    
